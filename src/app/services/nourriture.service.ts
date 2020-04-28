@@ -12,7 +12,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5
       },
-      nourritures = [
       {
         name: 'Panini Poulet',
         categorie: 'Sandwich',
@@ -25,7 +24,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 3.8
       },
-      nourritures = [
       {
         name: 'Pizza cinq fromage',
         categorie: 'Pizza',
@@ -38,7 +36,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4
       },
-      nourritures = [
       {
         name: 'Burger Chèvre miel',
         categorie: 'Americain',
@@ -51,7 +48,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.9
       },
-      nourritures = [
       {
         name: 'Sandwich parisien',
         categorie: 'Sandwich',
@@ -64,7 +60,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5
       },
-      nourritures = [
       {
         name: 'Pizza olive',
         categorie: 'Pizza',
@@ -77,7 +72,6 @@ export class NourritureService {
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.8
       },
-      nourritures = [
       {
         name: 'Frites Belges',
         categorie: 'Americain',
