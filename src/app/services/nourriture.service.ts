@@ -9,6 +9,7 @@ export class NourritureService {
         vendeur: "L'Adresse",
         description_vendeur: "Ce restaurant au décor contemporain propose des burgers gourmets et une cate de vins, avec formules le midi.",
         adresse: '34 Rue des Bouchers, 59800 Lille',
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5
       },
       nourritures = [
@@ -21,6 +22,7 @@ export class NourritureService {
         vendeur: "L'Aziza",
         description_vendeur: "Pâtisserie et salon de thé tunisien proposant aussi grillades, sandwiches et couscous à emporter.",
         adresse: '12 Rue du Molinel, 59000 Lille',
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 3.8
       },
       nourritures = [
@@ -33,6 +35,7 @@ export class NourritureService {
         vendeur: "Switch",
         description_vendeur: "Avec nous, vous ne pourrez pas jouer à Animal Corssing mais vous pourrez manger la meilleur pizza CINQ formages du monde.",
         adresse: '153 Rue Colbert, 59000 Lille',
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 4
       },
       nourritures = [
@@ -45,6 +48,7 @@ export class NourritureService {
         vendeur: "Jungle burger",
         description_vendeur: "On vend des burger un peu trop cher",
         adresse: "287 Rue du Faubourg d'Arras Local 8, 59155 Faches-Thumesnil",
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.9
       },
       nourritures = [
@@ -57,6 +61,7 @@ export class NourritureService {
         vendeur: "La gourmandine",
         description_vendeur: "Ici, on vend les meilleurs jambon beurre, mais on ne vend que ça..",
         adresse: "94 Rue de l'Hôpital Militaire, 59000 Lille",
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5
       },
       nourritures = [
@@ -65,10 +70,11 @@ export class NourritureService {
         categorie: 'Pizza',
         prix: 11,
         description: 'Et on cultive les olives nous mêmes',
-        img: 'assets/src/pizza.jpg',
+        img: 'assets/src/pizzaolive.jpg',
         vendeur: "Le royaume de l'olive",
         description_vendeur: "Au royaume de l'olive, vous avez des pizza, des burger, des salades (et bien plus) à base d'olive.",
         adresse: '10 Rue Solferino, 59800 Lille',
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.8
       },
       nourritures = [
@@ -81,7 +87,7 @@ export class NourritureService {
         vendeur: "A la belge frite",
         description_vendeur: "Du belge, du vrai!",
         adresse: '164 Avenue du Général de Gaulle, 59800 Lille',
-        img_vendeur: 'assets/src/restaurant.jpg'
+        img_vendeur: 'assets/src/restaurant.jpg',
         note: 3.4
       }
     ];
