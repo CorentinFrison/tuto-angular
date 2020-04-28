@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { NourritureService } from './services/nourriture.service';
 
 
 
@@ -43,7 +44,9 @@ const appRoutes : Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    NourritureService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,3 +13,6 @@ export class NourritureComponent implements OnInit {
   }
 
 }
+ngOnInit() {
+  this.nourritures = this.nourritureService.nourriture;
+}
