@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NourritureService } from '../services/nourriture.service';
 
 @Component({
   selector: 'app-nourriture',
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NourritureComponent implements OnInit {
 
-  constructor() { }
+  plats: any[];
 
-  ngOnInit(): void {
+  constructor(private nourritureService: NourritureService) { }
+
+  ngOnInit() {
+    this.plats = this.nourritureService.nourritures;
   }
 
 }
-ngOnInit() {
-  this.nourritures = this.nourritureService.nourriture;
-}
+
