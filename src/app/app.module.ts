@@ -9,6 +9,23 @@ import { SingleVendeurComponent } from './single-vendeur/single-vendeur.componen
 import { SingleNourritureComponent } from './single-nourriture/single-nourriture.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Routes, RouterModule } from '@angular/router';
+import { NotfoundComponent } from './notfound/notfound.component';
+
+
+
+const appRoutes : Routes = [
+  { path:'plats/:id', component: SingleVendeurComponent },
+  { path:'vendeurs', component: VendeursComponent },
+  { path:'vendeurs/:id', component: SingleVendeurComponent },
+  { path:'panier', component: PanierComponent },
+  { path:'', component: NourritureComponent },
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '404' }
+];
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,12 +34,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     VendeursComponent,
     PanierComponent,
     SingleVendeurComponent,
-    SingleNourritureComponent
-    NavbarComponent
+    SingleNourritureComponent,
+    NavbarComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
