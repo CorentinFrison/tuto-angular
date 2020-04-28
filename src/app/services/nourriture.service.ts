@@ -3,7 +3,8 @@ export class NourritureService {
       {
         name: 'Burger',
         categorie: 'Americain',
-
+        prix: 6,
+        description: 
       },
     ];
   }
