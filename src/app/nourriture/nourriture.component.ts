@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nourriture',
@@ -9,7 +9,7 @@ import { Component,Input, OnInit } from '@angular/core';
 
 
 export class NourritureComponent implements OnInit {
-  
+
   @Input() platName: string;
   @Input() platDescription: string;
   @Input() platImg: string;
@@ -21,7 +21,7 @@ export class NourritureComponent implements OnInit {
 
   constructor() { }
 
-  
+
   ngOnInit(): void {
   }
 

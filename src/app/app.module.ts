@@ -13,12 +13,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { NourritureService } from './services/nourriture.service';
 import { NourritureViewComponent } from './nourriture-view/nourriture-view.component';
+import { VendeursViewComponent } from './vendeurs-view/vendeurs-view.component';
 
 
 
 const appRoutes : Routes = [
   { path:'plats/:id', component: SingleVendeurComponent },
-  { path:'vendeurs', component: VendeursComponent },
+  { path:'vendeurs', component: VendeursViewComponent },
   { path:'vendeurs/:id', component: SingleVendeurComponent },
   { path:'panier', component: PanierComponent },
   { path:'', component: NourritureViewComponent },
@@ -39,7 +40,8 @@ const appRoutes : Routes = [
     SingleNourritureComponent,
     NavbarComponent,
     NotfoundComponent,
-    NourritureViewComponent
+    NourritureViewComponent,
+    VendeursViewComponent
   ],
   imports: [
     BrowserModule,
