@@ -9,7 +9,7 @@ import { Component,Input, OnInit } from '@angular/core';
 
 
 export class NourritureComponent implements OnInit {
-  
+
   @Input() platName: string;
   @Input() platDescription: string;
   @Input() platImg: string;
@@ -17,6 +17,7 @@ export class NourritureComponent implements OnInit {
   @Input() platCategorie: string;
   @Input() platVendeur: string;
   @Input() platImgVendeur: string;
+  @Input() id: number;
 
 
   constructor() { }

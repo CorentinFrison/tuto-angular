@@ -92,4 +92,22 @@ export class NourritureService {
         note: 3.4
       }
     ];
+
+
+    getPlatById(id: number) {
+      const plat = this.nourritures.find(
+        (s) => {
+          return s.id === id;
+        }
+      );
+      return plat;
+  }
+
+
+
+
+
+
+
+
   }

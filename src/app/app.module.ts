@@ -17,7 +17,8 @@ import { NourritureViewComponent } from './nourriture-view/nourriture-view.compo
 
 
 const appRoutes : Routes = [
-  { path:'plats/:id', component: SingleVendeurComponent },
+  { path:'plats', component: NourritureViewComponent },
+  { path:'plats/:id', component: SingleNourritureComponent },
   { path:'vendeurs', component: VendeursComponent },
   { path:'vendeurs/:id', component: SingleVendeurComponent },
   { path:'panier', component: PanierComponent },

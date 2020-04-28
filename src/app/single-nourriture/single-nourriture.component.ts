@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NourritureService } from '../services/nourriture.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-single-nourriture',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleNourritureComponent implements OnInit {
 
-  constructor() { }
+  name: string ;
+  categorie: string ;
+  prix:number;
+  description: string ;
+  img: string ;
+  vendeur: string ;
+  img_vendeur: string;
 
-  ngOnInit(): void {
+  constructor(private nourritureService: NourritureService, private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    const id = this.route.snapshot.params['id'];
+    console.log(id);
+    this.name = this.nourritureService.getPlatById(+id).name;
+    this.categorie = this.nourritureService.getPlatById(+id).categorie;
+    this.prix = this.nourritureService.getPlatById(+id).prix;
+    this.description = this.nourritureService.getPlatById(+id).description;
+    this.img = this.nourritureService.getPlatById(+id).img;
+    this.vendeur = this.nourritureService.getPlatById(+id).vendeur;
+    this.img_vendeur = this.nourritureService.getPlatById(+id).img_vendeur;
   }
 
 }
