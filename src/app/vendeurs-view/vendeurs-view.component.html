@@ -1,0 +1,10 @@
+<h2>Les plats à la carte</h2>
+<p>Découvrez nos succulents plats !</p>
+<app-vendeurs  *ngFor="let vendeur of vendeurs; let i = index"
+ [vendeurName]="vendeur.vendeur"
+ [vendeurDescription]="vendeur.description_vendeur"
+ [vendeurImg]="vendeur.img_vendeur"
+ [vendeurAdresse]="vendeur.adresse"
+ [vendeurNote]="vendeur.note">
+</app-vendeurs>
+
