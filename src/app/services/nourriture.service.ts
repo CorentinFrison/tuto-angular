@@ -1,6 +1,7 @@
 export class NourritureService {
     nourritures = [
       {
+        id:1,
         name: 'Burger',
         categorie: 'Americain',
         prix: 6,
@@ -13,6 +14,7 @@ export class NourritureService {
         note: 4.5
       },
       {
+        id:2,
         name: 'Panini Poulet',
         categorie: 'Sandwich',
         prix: 5,
@@ -25,6 +27,7 @@ export class NourritureService {
         note: 3.8
       },
       {
+        id:3,
         name: 'Pizza cinq fromage',
         categorie: 'Pizza',
         prix: 10,
@@ -37,6 +40,7 @@ export class NourritureService {
         note: 4
       },
       {
+        id:4,
         name: 'Burger Chèvre miel',
         categorie: 'Americain',
         prix: 12,
@@ -49,6 +53,7 @@ export class NourritureService {
         note: 4.9
       },
       {
+        id:5,
         name: 'Sandwich parisien',
         categorie: 'Sandwich',
         prix: 5,
@@ -61,6 +66,7 @@ export class NourritureService {
         note: 4.5
       },
       {
+        id:6,
         name: 'Pizza olive',
         categorie: 'Pizza',
         prix: 11,
@@ -73,6 +79,7 @@ export class NourritureService {
         note: 4.8
       },
       {
+        id:7,
         name: 'Frites Belges',
         categorie: 'Americain',
         prix: 8,

@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { NourritureService } from './services/nourriture.service';
+import { NourritureViewComponent } from './nourriture-view/nourriture-view.component';
 
 
 
@@ -20,7 +21,7 @@ const appRoutes : Routes = [
   { path:'vendeurs', component: VendeursComponent },
   { path:'vendeurs/:id', component: SingleVendeurComponent },
   { path:'panier', component: PanierComponent },
-  { path:'', component: NourritureComponent },
+  { path:'', component: NourritureViewComponent },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '404' }
 ];
@@ -37,7 +38,8 @@ const appRoutes : Routes = [
     SingleVendeurComponent,
     SingleNourritureComponent,
     NavbarComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    NourritureViewComponent
   ],
   imports: [
     BrowserModule,

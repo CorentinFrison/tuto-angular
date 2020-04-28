@@ -1,1 +1,8 @@
-<p>nourriture works!</p>
+<div class="card" style="width: 18rem;">
+        <img class="card-img-top" src={{platImg}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{platName}}</h5>
+          <p class="card-text">{{platDescription}}</p>
+          <a [routerLink]="[id]" class="btn btn-primary">Détails</a>
+        </div>
+      </div>

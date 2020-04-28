@@ -1,0 +1,15 @@
+<h2>Les plats à la carte</h2>
+            <p>Découvrez nos succulents plats !</p>
+      
+
+         
+                        <app-nourriture  *ngFor="let plat of plats; let i = index"
+                                       [platName]="plat.name"
+                                       [platDescription]="plat.description"
+                                       [platImg]="plat.img" 
+                                       [platPrix]="plat.prix"
+                                       [platCategorie]="plat.categorie"
+                                       [platVendeur]="plat.name"
+                                       [platImgVendeur]="plat.name">                                   
+                                    </app-nourriture>
+                       
