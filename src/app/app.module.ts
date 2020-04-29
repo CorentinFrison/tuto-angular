@@ -18,14 +18,9 @@ import { VendeursViewComponent } from './vendeurs-view/vendeurs-view.component';
 
 
 const appRoutes : Routes = [
-<<<<<<< HEAD
   { path:'plats', component: NourritureViewComponent },
   { path:'plats/:id', component: SingleNourritureComponent },
   { path:'vendeurs', component: VendeursComponent },
-=======
-  { path:'plats/:id', component: SingleVendeurComponent },
-  { path:'vendeurs', component: VendeursViewComponent },
->>>>>>> 27a8a22fa6fbbf685ce1e1748c5d3f4a1895c9a3
   { path:'vendeurs/:id', component: SingleVendeurComponent },
   { path:'panier', component: PanierComponent },
   { path:'', component: NourritureViewComponent },
