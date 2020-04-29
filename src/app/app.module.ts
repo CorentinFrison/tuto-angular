@@ -20,7 +20,7 @@ import { VendeursViewComponent } from './vendeurs-view/vendeurs-view.component';
 const appRoutes : Routes = [
   { path:'plats', component: NourritureViewComponent },
   { path:'plats/:id', component: SingleNourritureComponent },
-  { path:'vendeurs', component: VendeursComponent },
+  { path:'vendeurs', component: VendeursViewComponent },
   { path:'vendeurs/:id', component: SingleVendeurComponent },
   { path:'panier', component: PanierComponent },
   { path:'', redirectTo: 'plats', pathMatch: 'full' },
