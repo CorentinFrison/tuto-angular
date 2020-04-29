@@ -23,7 +23,7 @@ const appRoutes : Routes = [
   { path:'plats/:id', component: SingleNourritureComponent },
   { path:'vendeurs', component: VendeursViewComponent },
   { path:'vendeurs/:id', component: SingleVendeurComponent },
-  { path:'panier', component: PanierComponent },
+  { path:'panier', component: PanierViewComponent },
   { path:'', redirectTo: 'plats', pathMatch: 'full' },
   { path: '**', component: NotfoundComponent }
 ];

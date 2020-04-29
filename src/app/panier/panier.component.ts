@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NourritureService } from '../services/nourriture.service';
 
 @Component({
   selector: 'app-panier',
@@ -7,9 +6,7 @@ import { NourritureService } from '../services/nourriture.service';
   styleUrls: ['./panier.component.css']
 })
 export class PanierComponent implements OnInit {
-
-  panierList:any[];
-
+  
   @Input() platName: string;
   @Input() platDescription: string;
   @Input() platImg: string;
@@ -18,14 +15,14 @@ export class PanierComponent implements OnInit {
   @Input() platVendeur: string;
   @Input() platImgVendeur: string;
   @Input() id: number;
+  @Input() index: number;
   @Input() panier: boolean;
 
 
-  constructor(private nourritureService: NourritureService) { }
+  constructor() { }
 
 
-  ngOnInit() {
-    this.panierList = this.nourritureService.nourritures;
+  ngOnInit(): void {
   }
 
 
