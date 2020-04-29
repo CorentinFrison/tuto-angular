@@ -31,6 +31,8 @@ export class SingleNourritureComponent implements OnInit {
     this.img = this.nourritureService.getPlatById(+id).img;
     this.vendeur = this.nourritureService.getPlatById(+id).vendeur;
     this.img_vendeur = this.nourritureService.getPlatById(+id).img_vendeur;
+    this.panier = this.nourritureService.getPlatById(+id).panier;
+    console.log(this.panier) 
   }
 
   onAcheter() {

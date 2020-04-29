@@ -27,7 +27,7 @@ export class NourritureComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log(panier) 
+    
   }
 
   onAcheter() {
