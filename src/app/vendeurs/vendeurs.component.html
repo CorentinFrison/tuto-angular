@@ -1,8 +1,14 @@
-<div class="card" style="width: 18rem;">
+
+<div class="card">
   <img class="card-img-top" src={{vendeurImg}} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{vendeurName}}</h5>
     <p class="card-text">{{vendeurDescription}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Note : {{vendeurNote}}</li>
+  </ul>
+  <div class="card-body">
     <a [routerLink]="[idVendeur]" class="btn btn-primary">Détails</a>
   </div>
 </div>
