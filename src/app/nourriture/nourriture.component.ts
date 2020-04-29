@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NourritureService } from '../services/nourriture.service';
 
 @Component({
   selector: 'app-nourriture',
@@ -22,12 +23,15 @@ export class NourritureComponent implements OnInit {
   @Input() panier: boolean;
 
 
-  constructor() { }
+  constructor(private NourritureService: NourritureService) { }
 
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log(panier) 
   }
 
+  onAcheter() {
+    this.NourritureService.switchPanier(this.index);
+  }
 
 }
-

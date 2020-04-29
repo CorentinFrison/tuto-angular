@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NourritureService } from '../services/nourriture.service';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-single-nourriture',
   templateUrl: './single-nourriture.component.html',
@@ -16,6 +17,8 @@ export class SingleNourritureComponent implements OnInit {
   img: string ;
   vendeur: string ;
   img_vendeur: string;
+  index: number;
+  panier:boolean;
 
   constructor(private nourritureService: NourritureService, private route: ActivatedRoute) { }
 
@@ -28,6 +31,10 @@ export class SingleNourritureComponent implements OnInit {
     this.img = this.nourritureService.getPlatById(+id).img;
     this.vendeur = this.nourritureService.getPlatById(+id).vendeur;
     this.img_vendeur = this.nourritureService.getPlatById(+id).img_vendeur;
+  }
+
+  onAcheter() {
+    this.nourritureService.switchPanier(this.index);
   }
 
 }
