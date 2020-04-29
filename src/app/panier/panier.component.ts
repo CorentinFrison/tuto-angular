@@ -8,7 +8,7 @@ import { NourritureService } from '../services/nourriture.service';
 })
 export class PanierComponent implements OnInit {
 
-
+  panierList:any[];
 
   @Input() platName: string;
   @Input() platDescription: string;
@@ -21,10 +21,11 @@ export class PanierComponent implements OnInit {
   @Input() panier: boolean;
 
 
-  constructor() { }
+  constructor(private nourritureService: NourritureService) { }
 
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.panierList = this.nourritureService.nourritures;
   }
 
 
