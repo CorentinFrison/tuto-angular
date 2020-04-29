@@ -18,12 +18,12 @@ export class SingleVendeurComponent implements OnInit {
   constructor(private nourritureService: NourritureService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = this.route.snapshot.params['id'];
-    this.vendeurName = this.nourritureService.getPlatById(+id).vendeur;
-    this.vendeurDescription = this.nourritureService.getPlatById(+id).description_vendeur;
-    this.vendeurAdresse = this.nourritureService.getPlatById(+id).adresse;
-    this.vendeurImg = this.nourritureService.getPlatById(+id).img_vendeur;
-    this.vendeurNote = this.nourritureService.getPlatById(+id).note;
+    const idVendeur = this.route.snapshot.params['idVendeur'];
+    this.vendeurName = this.nourritureService.getVendeurById(+idVendeur).vendeur;
+    this.vendeurDescription = this.nourritureService.getVendeurById(+idVendeur).description_vendeur;
+    this.vendeurAdresse = this.nourritureService.getVendeurById(+idVendeur).adresse;
+    this.vendeurImg = this.nourritureService.getVendeurById(+idVendeur).img_vendeur;
+    this.vendeurNote = this.nourritureService.getVendeurById(+idVendeur).note;
   }
 
 }
