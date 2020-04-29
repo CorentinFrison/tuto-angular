@@ -17,6 +17,8 @@ export class NourritureViewComponent implements OnInit {
   @Input() platCategorie: string;
   @Input() platVendeur: string;
   @Input() platImgVendeur: string;
+  @Input() id: number;
+  @Input() index: number;
 
   constructor(private nourritureService: NourritureService) { }
 

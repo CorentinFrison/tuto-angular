@@ -18,6 +18,7 @@ export class NourritureComponent implements OnInit {
   @Input() platVendeur: string;
   @Input() platImgVendeur: string;
   @Input() id: number;
+  @Input() index: number;
 
 
   constructor() { }
