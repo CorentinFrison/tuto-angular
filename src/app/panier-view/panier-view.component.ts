@@ -2,9 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NourritureService } from '../services/nourriture.service';
 
 @Component({
-  selector: 'app-panier',
-  templateUrl: './panier.component.html',
-  styleUrls: ['./panier.component.css']
+  selector: 'app-panier-view',
+  templateUrl: './panier-view.component.html',
+  styleUrls: ['./panier-view.component.css']
 })
 export class PanierViewComponent implements OnInit {
 
