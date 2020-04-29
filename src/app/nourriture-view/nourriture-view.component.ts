@@ -25,6 +25,7 @@ export class NourritureViewComponent implements OnInit {
 
   ngOnInit() {
     this.plats = this.nourritureService.nourritures;
+     
   }
 
 }

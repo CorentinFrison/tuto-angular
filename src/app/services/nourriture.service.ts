@@ -58,7 +58,7 @@ export class NourritureService {
         adresse: "287 Rue du Faubourg d'Arras Local 8, 59155 Faches-Thumesnil",
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.9,
-        panier:true
+        panier:false
       },
       {
         id:5,
@@ -124,7 +124,13 @@ export class NourritureService {
         }
       );
       return seller;
-  }
+    }
+
+
+      switchPanier(i : number){
+        this.nourritures[i].panier = true;
+      }
+ 
 
 
 
