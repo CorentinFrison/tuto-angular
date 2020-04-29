@@ -1,14 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NourritureService } from '../services/nourriture.service';
 
+
 @Component({
-  selector: 'app-panier',
-  templateUrl: './panier.component.html',
-  styleUrls: ['./panier.component.css']
+  selector: 'app-panier-view',
+  templateUrl: './panier-view.component.html',
+  styleUrls: ['./panier-view.component.css']
 })
-export class PanierComponent implements OnInit {
+export class PanierViewComponent implements OnInit {
 
-
+  nourriture: any[];
 
   @Input() platName: string;
   @Input() platDescription: string;
@@ -20,12 +21,10 @@ export class PanierComponent implements OnInit {
   @Input() id: number;
   @Input() panier: boolean;
 
+  constructor(private nourritureService: NourritureService) { }
 
-  constructor() { }
-
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.nourriture = this.nourritureService.nourritures;
   }
-
 
 }

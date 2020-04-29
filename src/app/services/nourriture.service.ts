@@ -11,7 +11,8 @@ export class NourritureService {
         description_vendeur: "Ce restaurant au décor contemporain propose des burgers gourmets et une cate de vins, avec formules le midi.",
         adresse: '34 Rue des Bouchers, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 4.5
+        note: 4.5,
+        panier:false
       },
       {
         id:2,
@@ -24,7 +25,8 @@ export class NourritureService {
         description_vendeur: "Pâtisserie et salon de thé tunisien proposant aussi grillades, sandwiches et couscous à emporter.",
         adresse: '12 Rue du Molinel, 59000 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 3.8
+        note: 3.8,
+        panier:true
       },
       {
         id:3,
@@ -37,7 +39,8 @@ export class NourritureService {
         description_vendeur: "Avec nous, vous ne pourrez pas jouer à Animal Corssing mais vous pourrez manger la meilleur pizza CINQ formages du monde.",
         adresse: '153 Rue Colbert, 59000 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 4
+        note: 4,
+        panier:false
       },
       {
         id:4,
@@ -50,7 +53,8 @@ export class NourritureService {
         description_vendeur: "On vend des burger un peu trop cher",
         adresse: "287 Rue du Faubourg d'Arras Local 8, 59155 Faches-Thumesnil",
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 4.9
+        note: 4.9,
+        panier:true
       },
       {
         id:5,
@@ -63,7 +67,8 @@ export class NourritureService {
         description_vendeur: "Ici, on vend les meilleurs jambon beurre, mais on ne vend que ça..",
         adresse: "94 Rue de l'Hôpital Militaire, 59000 Lille",
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 4.5
+        note: 4.5,
+        panier:false
       },
       {
         id:6,
@@ -76,7 +81,8 @@ export class NourritureService {
         description_vendeur: "Au royaume de l'olive, vous avez des pizza, des burger, des salades (et bien plus) à base d'olive.",
         adresse: '10 Rue Solferino, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 4.8
+        note: 4.8,
+        panier:false
       },
       {
         id:7,
@@ -89,19 +95,20 @@ export class NourritureService {
         description_vendeur: "Du belge, du vrai!",
         adresse: '164 Avenue du Général de Gaulle, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
-        note: 3.4
+        note: 3.4,
+        panier: false
       }
     ];
 
 
     getPlatById(id: number) {
-      const plat = this.nourritures.find(
-        (s) => {
-          return s.id === id;
-        }
-      );
-      return plat;
-  }
+        const plat = this.nourritures.find(
+          (s) => {
+            return s.id === id;
+          }
+        );
+        return plat;
+    }
 
 
 

@@ -1,1 +1,15 @@
-<p>panier works!</p>
+<div class="card" style="width: 32rem;">
+    <img class="card-img-top" src={{platImg}} alt="Card image cap" >
+    <div class="card-body">
+      <h5 class="card-title">{{platName}}</h5>
+      <p class="card-text">{{platDescription}}</p>
+    </div>
+      <ul class="list-group list-group-flush">
+            <li class="list-group-item">Catégorie : {{platCategorie}}</li>
+            <li class="list-group-item">Vendeur : {{platVendeur}}</li>
+    </ul>
+    <div class="card-body">
+      <a [routerLink]="[id]" class="btn btn-primary">Détails</a>
+    </div>
+  </div>
+
