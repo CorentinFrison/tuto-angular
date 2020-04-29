@@ -14,6 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { NourritureService } from './services/nourriture.service';
 import { NourritureViewComponent } from './nourriture-view/nourriture-view.component';
 import { VendeursViewComponent } from './vendeurs-view/vendeurs-view.component';
+import { PanierViewComponent } from './panier-view/panier-view.component';
 
 
 
@@ -42,7 +43,8 @@ const appRoutes : Routes = [
     NavbarComponent,
     NotfoundComponent,
     NourritureViewComponent,
-    VendeursViewComponent
+    VendeursViewComponent,
+    PanierViewComponent
   ],
   imports: [
     BrowserModule,

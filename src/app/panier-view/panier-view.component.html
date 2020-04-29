@@ -3,7 +3,7 @@
       
 
          
-                        <app-nourriture  *ngFor="let plat of plats; let i = index"
+                        <app-panier  *ngFor="let plat of plats; let i = index"
                                        [platName]="plat.name"
                                        [platDescription]="plat.description"
                                        [platImg]="plat.img" 
@@ -12,5 +12,5 @@
                                        [platVendeur]="plat.name"
                                        [platImgVendeur]="plat.name">  
                                                                         
-                                    </app-nourriture>
+                                    </app-panier>
                        

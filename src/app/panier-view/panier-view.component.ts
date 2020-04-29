@@ -1,14 +1,15 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NourritureService } from '../services/nourriture.service';
 
-@Component({
-  selector: 'app-nourriture-view',
-  templateUrl: './nourriture-view.component.html',
-  styleUrls: ['./nourriture-view.component.css']
-})
-export class NourritureViewComponent implements OnInit {
 
-  plats: any[];
+@Component({
+  selector: 'app-panier-view',
+  templateUrl: './panier-view.component.html',
+  styleUrls: ['./panier-view.component.css']
+})
+export class PanierViewComponent implements OnInit {
+
+  nourriture: any[];
 
   @Input() platName: string;
   @Input() platDescription: string;
@@ -23,7 +24,7 @@ export class NourritureViewComponent implements OnInit {
   constructor(private nourritureService: NourritureService) { }
 
   ngOnInit() {
-    this.plats = this.nourritureService.nourritures;
+    this.nourriture = this.nourritureService.nourritures;
   }
 
 }
