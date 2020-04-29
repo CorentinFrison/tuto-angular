@@ -1,19 +1,19 @@
-<h2>Les plats à la carte</h2>
-            <p>Découvrez nos succulents plats !</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 mt-3">
+      <h2>Les plats à la carte</h2>
+      <p>Découvrez nos succulents plats !</p>
+    </div>
+  </div>
+</div>
 
+<div class="container">
+  <div class="row">
+    <app-nourriture class="col-md-4 col-sm-12 mt-3 mb-3" *ngFor="let plat of plats; let i = index"
+      [platName]="plat.name" [platDescription]="plat.description" [platImg]="plat.img" [platPrix]="plat.prix"
+      [platCategorie]="plat.categorie" [platVendeur]="plat.name" [platImgVendeur]="plat.name" [index]="i" [id]="plat.id"
+      [panier]="plat.panier">
 
-
-                        <app-nourriture  *ngFor="let plat of plats; let i = index"
-                                       [platName]="plat.name"
-                                       [platDescription]="plat.description"
-                                       [platImg]="plat.img"
-                                       [platPrix]="plat.prix"
-                                       [platCategorie]="plat.categorie"
-                                       [platVendeur]="plat.name"
-                                       [platImgVendeur]="plat.name"
-                                       [index]="i"
-                                       [id]="plat.id"
-                                       [panier]="plat.panier">
-
-                                    </app-nourriture>
-
+    </app-nourriture>
+  </div>
+</div>
