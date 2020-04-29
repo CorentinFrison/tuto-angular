@@ -1,2 +1,11 @@
-
-                       
+<app-panier  *ngFor="let plat of panierList; let i = index"
+[platName]="plat.name"
+[platDescription]="plat.description"
+[platImg]="plat.img"
+[platPrix]="plat.prix"
+[platCategorie]="plat.categorie"
+[platVendeur]="plat.name"
+[platImgVendeur]="plat.name"
+[index]="i"
+[id]="plat.id">
+</app-panier>
