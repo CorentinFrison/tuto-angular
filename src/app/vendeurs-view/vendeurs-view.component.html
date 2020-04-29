@@ -1,10 +1,13 @@
 <h2>Vendeurs</h2>
 <p>Découvrez nos meilleurs vendeurs !</p>
-<app-vendeurs  *ngFor="let vendeur of vendeurs"
+<app-vendeurs  *ngFor="let vendeur of vendeurs; let i = index"
  [vendeurName]="vendeur.vendeur"
  [vendeurDescription]="vendeur.description_vendeur"
  [vendeurImg]="vendeur.img_vendeur"
  [vendeurAdresse]="vendeur.adresse"
- [vendeurNote]="vendeur.note">
+ [vendeurNote]="vendeur.note"
+ [index]="i"
+ [id]="vendeur.id">
+
 </app-vendeurs>
 
