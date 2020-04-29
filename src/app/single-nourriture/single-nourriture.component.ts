@@ -21,7 +21,6 @@ export class SingleNourritureComponent implements OnInit {
 
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
-    console.log(id);
     this.name = this.nourritureService.getPlatById(+id).name;
     this.categorie = this.nourritureService.getPlatById(+id).categorie;
     this.prix = this.nourritureService.getPlatById(+id).prix;
