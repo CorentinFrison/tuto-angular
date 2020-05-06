@@ -16,7 +16,7 @@ export class PanierComponent implements OnInit {
   @Input() platImgVendeur: string;
   @Input() id: number;
   @Input() index: number;
-  @Input() panier: boolean;
+  @Input() panier: number;
 
 
   constructor() { }

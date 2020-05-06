@@ -20,7 +20,7 @@ export class NourritureComponent implements OnInit {
   @Input() platImgVendeur: string;
   @Input() id: number;
   @Input() index: number;
-  @Input() panier: boolean;
+  @Input() panier: number;
 
 
   constructor(private NourritureService: NourritureService) { }

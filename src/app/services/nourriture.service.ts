@@ -13,7 +13,7 @@ export class NourritureService {
         adresse: '34 Rue des Bouchers, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5,
-        panier:false
+        panier:1
       },
       {
         id:2,
@@ -28,7 +28,7 @@ export class NourritureService {
         adresse: '12 Rue du Molinel, 59000 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 3.8,
-        panier:true
+        panier:0
       },
       {
         id:3,
@@ -43,7 +43,7 @@ export class NourritureService {
         adresse: '153 Rue Colbert, 59000 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4,
-        panier:false
+        panier:0
       },
       {
         id:4,
@@ -58,7 +58,7 @@ export class NourritureService {
         adresse: "287 Rue du Faubourg d'Arras Local 8, 59155 Faches-Thumesnil",
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.9,
-        panier:false
+        panier:0
       },
       {
         id:5,
@@ -73,7 +73,7 @@ export class NourritureService {
         adresse: "94 Rue de l'Hôpital Militaire, 59000 Lille",
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.5,
-        panier:false
+        panier:0
       },
       {
         id:6,
@@ -88,7 +88,7 @@ export class NourritureService {
         adresse: '10 Rue Solferino, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 4.8,
-        panier:false
+        panier:0
       },
       {
         id:7,
@@ -103,7 +103,7 @@ export class NourritureService {
         adresse: '164 Avenue du Général de Gaulle, 59800 Lille',
         img_vendeur: 'assets/src/restaurant.jpg',
         note: 3.4,
-        panier: false
+        panier: 0
       }
     ];
 
@@ -127,8 +127,10 @@ export class NourritureService {
     }
 
 
-      switchPanier(i : number){
-        this.nourritures[i].panier = true;
+      addPanier(index : number){
+        // console.log(this.index);
+        // this.nourritures[i].panier = 1;
+        // console.log(this.nourritures[i].panier);
       }
  
 
