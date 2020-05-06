@@ -15,7 +15,8 @@ export class VendeursComponent implements OnInit {
   @Input() vendeurAdresse: string;
   @Input() vendeurImg: string;
   @Input() vendeurNote: number;
-
+  @Input() idVendeur: number;
+  @Input() index: number;
 
   constructor() { }
 

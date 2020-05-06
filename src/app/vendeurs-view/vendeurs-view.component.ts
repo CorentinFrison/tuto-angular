@@ -15,6 +15,8 @@ export class VendeursViewComponent implements OnInit {
   @Input() vendeurAdresse: string;
   @Input() vendeurImg: string;
   @Input() vendeurNote: number;
+  @Input() idVendeur: number;
+  @Input() index: number;
 
   constructor(private nourritureService: NourritureService) { }
 
