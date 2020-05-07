@@ -127,12 +127,12 @@ export class NourritureService {
     }
 
 
-      addPanier(index : number){
-        // this.panier = this.panier +1;
-        // console.log(this.index);
-        // this.nourritures[i].panier = 1;
-        // console.log(this.nourritures[i].panier);
-      }
+      // addPanier(index : number){
+      //   // this.panier = this.panier +1;
+      //   // console.log(this.index);
+      //   // this.nourritures[i].panier = 1;
+      //   // console.log(this.nourritures[i].panier);
+      // }
  
 
 
