@@ -364,14 +364,18 @@ cette fonction permet de lancer une autre fonction “addPanier” qui est un se
 ```javascript
 addPanier(index:number){
     this.panier = this.panier+1;
-}
+...
 ```
 
 La variable panier correspond au nombre de fois que l’on clic sur le bouton “ajout au panier” ce qui permet à l’utilisateur d’ajouter plusieurs fois un produit à son panier
 A chaque fois qu’il clic sur “ajouter au panier” cette fonction d’indentation ajoute +1.
 
 Dans la page ”panier”, il ne nous reste plus qu’à afficher les produits qui ont une valeur (strictement) supérieure à 0, c’est à dire, où l’utilisateur à au moins cliquer une fois sur le bouton “ajout au panier”
-On réalise cela grâce à une directive. 
+On réalise cela grâce à une directive. En Angular, on utilise ngif* pour donner une condition : 
+```javascript
+<div class="card" style="width: 32rem;" *ngif='panier>0'>
+   <img class="card-img-top" src={{...
+```
 
 ## 5 - Comparaison avec React
 Contrairement à React qui est un bibliotèque, Angular est un véritable framework qui se suffit à soit même.  
@@ -381,6 +385,7 @@ Angular ne permet pas de faire des applications natives, contrairement à React 
 Pas d'erreur qui s’affiche à l’écran donc compliqué pour le débug 
 Beaucoup de fichier, l’architecture devient compliqué avec un certain nombre de fichiers
 Apprentissage et méthode de création de components différente de React
+Le travail à plusieurs est compliqué car on doit rapidement touché aux mêmes fichiers
 
 ## 7 - Références
 [Présentation d’Angular - Quelles applis “SPA” peut-on coder avec Angular ?](https://www.youtube.com/watch?v=R2apWo2_41o)
